@@ -52,11 +52,14 @@ if (!$resultado) {
             <p><?= substr($n['noticia'], 0, 200) ?>...</p>
 
             <p>
-                <small>
-                    Por <b><?= $n['nome'] ?></b> — 
-                    <?= date('d/m/Y H:i', strtotime($n['data'])) ?>
-                </small>
-            </p>
+    <small>
+        Por 
+        <a href="perfil.php?id=<?= $n['autor'] ?>">
+            <b><?= $n['nome'] ?></b>
+        </a>
+         — <?= date('d/m/Y H:i', strtotime($n['data'])) ?>
+    </small>
+</p>
 
             <a href="noticia.php?id=<?= $n['id'] ?>" class="btn">Ler Mais</a>
         </div>
