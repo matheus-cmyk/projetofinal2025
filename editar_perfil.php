@@ -59,6 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <style>
     .form-box {
+        
         max-width: 550px;
         margin: 30px auto;
         background: #fff;
