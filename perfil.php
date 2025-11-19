@@ -6,6 +6,7 @@ $id = $_GET['id'] ?? null;
 if (!$id) {
     echo "ID inválido.";
     exit;
+    
 }
 
 $sql = "SELECT * FROM usuarios WHERE id = $id";
